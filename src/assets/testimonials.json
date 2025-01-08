@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "course": "Web Development Bootcamp",
+      "feedback": "This course transformed my career! The content was easy to understand and highly practical.",
+      "image": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "course": "Data Science Masterclass",
+      "feedback": "A fantastic course with a hands-on approach. I learned so much in such a short time.",
+      "image": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 3,
+      "name": "Michael Lee",
+      "course": "UI/UX Design Fundamentals",
+      "feedback": "This course helped me transition into design. The projects were challenging and rewarding.",
+      "image": "https://via.placeholder.com/100"
+    }
+    
+  
+
+  ]
+  

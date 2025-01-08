@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "title": "Full-Stack Web Development",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "category": "Programming",
+    "description": "Master front-end and back-end development with hands-on projects.",
+    "duration": "6 months",
+    "fee": 800,
+    "image": "web-development.jpg",
+    "popular": true,
+     "link": "/courses/1"
+  },
+  {
+    "id": 2,
+    "title": "Graphic Design Masterclass",
+    "category": "Design",
+    "description": "Learn Photoshop, Illustrator, and Figma to create stunning visuals.",
+    "duration": "3 months",
+    "fee": 600,
+    "image": "graphic-design.jpg",
+    "popular": true,
+     "link": "/courses/2"
+  
+  },
+  {
+    "id": 3,
+    "title": "Cybersecurity Essentials",
+    "category": "Cybersecurity",
+    "description": "Gain in-demand skills to protect systems and networks.",
+    "duration": "4 months",
+    "fee": 700,
+    "image": "cybersecurity.jpg",
+    "link": "/courses/3"
+    
+  },
+  {
+    "id": 4,
+    "title": "Data Science Bootcamp",
+    "category": "Data Science",
+    "description": "Learn Python, Machine Learning, and AI in this intensive bootcamp.",
+    "duration": "5 months",
+    "fee": 900,
+    "image": "data-science.jpg",
+    "link": "/courses/4"
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Design Principles",
+    "category": "Design",
+    "description": "Design intuitive and engaging digital experiences.",
+    "duration": "3 months",
+    "fee": 500,
+    "image": "ui-ux-design.jpg",
+    "link": "/courses/5"
+   
+  },
+  {
+    "id": 6,
+    "title": "Mobile App Development",
+    "category": "Programming",
+    "description": "Build cross-platform apps for iOS and Android.",
+    "duration": "6 months",
+    "fee": 800,
+    "image": "mobile-app-development.jpg",
+    "link": "/courses/6"
+   
+  },
+  {
+    "id": 7,
+    "title": "Cloud Computing",
+    "category": "Cloud Computing",
+    "description": "Learn to deploy and manage applications on cloud platforms.",
+    "duration": "4 months",
+    "fee": 700,
+    "image": "cloud-computing.jpg",
+    "popular": true,
+    "link": "/courses/7"
+  
+  },
+  {
+    "id": 8,
+    "title": "Digital Marketing Fundamentals",
+    "category": "Marketing",
+    "description": "Master SEO, SEM, and social media marketing.",
+    "duration": "3 months",
+    "fee": 600,
+    "image": "digital-marketing.jpg",
+    "link": "/courses/8"
+  }
+]

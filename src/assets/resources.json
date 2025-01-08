@@ -1,0 +1,28 @@
+{
+    "allResources": [
+      {
+        "id": 1,
+        "title": "Vue.js Beginner Guide",
+        "description": "A comprehensive guide to get started with Vue.js.",
+        "type": "Guides",
+        "downloadLink": "/downloads/vue-beginner-guide.pdf"
+      },
+      {
+        "id": 2,
+        "title": "CSS Cheat Sheet",
+        "description": "A handy reference for CSS properties.",
+        "type": "Cheat Sheets",
+        "downloadLink": "/downloads/css-cheat-sheet.pdf"
+      },
+      {
+        "id": 3,
+        "title": "Project Planning Template",
+        "description": "A template for planning your projects.",
+        "type": "Templates",
+        "downloadLink": "/downloads/project-template.docx"
+      }
+    ],
+    "filteredResources": [],
+    "resourceTypes": ["All", "Guides", "Cheat Sheets", "Templates"],
+    "selectedType": "All"
+  }
