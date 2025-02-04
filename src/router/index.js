@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 const CourseList = () => import('../views/CourseList.vue')
-const CourseDetails = () => import('../views/coursedetails.vue')
+import CourseDetails from '../views/CourseDetails.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  mode: 'hash',
   routes: [
     {
       path: '/',

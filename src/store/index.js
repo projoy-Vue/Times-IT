@@ -6,18 +6,19 @@ import testimonials from "./modules/testimonials";
 import resources from "./modules/resources";
 //import * as  relatedCourses from "./modules/relatedcourses"; // Use named imports
 import CourseStatistics from "./modules/statistics";
-import CourseDetailsHeader from "./modules/CourseDetailsHeader";
+import CourseHeroSection from "./modules/CourseHeroSection";
 
 export default createStore({
  namespaced: true,
   modules: {
+
     popularCourses,
     courses: courseGrid,
     testimonials,
     resources,
     //relatedCourses,
     CourseStatistics,
-    CourseDetailsHeader
+    CourseHeroSection,
   },
 });
   

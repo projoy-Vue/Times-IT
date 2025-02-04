@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Full-Stack Web Development",
     "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "https://picsum.photos/536/354",
     "category": "Programming",
     "description": "Master front-end and back-end development with hands-on projects.",
     "duration": "6 months",
@@ -14,6 +15,8 @@
   {
     "id": 2,
     "title": "Graphic Design Masterclass",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "graphic-design-hero.jpg",
     "category": "Design",
     "description": "Learn Photoshop, Illustrator, and Figma to create stunning visuals.",
     "duration": "3 months",
@@ -26,6 +29,8 @@
   {
     "id": 3,
     "title": "Cybersecurity Essentials",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "cybersecurity-hero.jpg",
     "category": "Cybersecurity",
     "description": "Gain in-demand skills to protect systems and networks.",
     "duration": "4 months",
@@ -37,6 +42,8 @@
   {
     "id": 4,
     "title": "Data Science Bootcamp",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "data-science-hero.jpg",
     "category": "Data Science",
     "description": "Learn Python, Machine Learning, and AI in this intensive bootcamp.",
     "duration": "5 months",
@@ -47,6 +54,8 @@
   {
     "id": 5,
     "title": "UI/UX Design Principles",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "ui-ux-design-hero.jpg",
     "category": "Design",
     "description": "Design intuitive and engaging digital experiences.",
     "duration": "3 months",
@@ -58,6 +67,8 @@
   {
     "id": 6,
     "title": "Mobile App Development",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "mobile-app-development-hero.jpg",
     "category": "Programming",
     "description": "Build cross-platform apps for iOS and Android.",
     "duration": "6 months",
@@ -69,6 +80,8 @@
   {
     "id": 7,
     "title": "Cloud Computing",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "cloud-computing-hero.jpg",
     "category": "Cloud Computing",
     "description": "Learn to deploy and manage applications on cloud platforms.",
     "duration": "4 months",
@@ -81,6 +94,8 @@
   {
     "id": 8,
     "title": "Digital Marketing Fundamentals",
+    "tagline": "From Beginner to Advanced with Real Projects",
+    "heroImage": "digital-marketing-hero.jpg",
     "category": "Marketing",
     "description": "Master SEO, SEM, and social media marketing.",
     "duration": "3 months",

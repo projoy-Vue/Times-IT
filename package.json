@@ -2,7 +2,19 @@
   "name": "it",
   "version": "0.0.0",
   "private": true,
+  "description": "Welcome to the **IT Academy Website** project! This website is designed for an online IT learning platform offering various technology courses, training programs, and resources for students. It features smooth navigation, responsive design, and a clear course structure, providing an engaging user experience.",
+  "homepage": "https://github.com/projoy-Vue/Times-IT#readme",
+  "bugs": {
+    "url": "https://github.com/projoy-Vue/Times-IT/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projoy-Vue/Times-IT.git"
+  },
+  "license": "ISC",
+  "author": "projoy naidu",
   "type": "module",
+  "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

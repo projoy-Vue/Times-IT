@@ -1,31 +1,37 @@
 <template>
     <div class="coursedetails">
-    <CourseDetails/>
+    <CourseHero />
     <CourseOverview/>
-    <MeetTheTeam/>
     <CourseCurriculum/>
+    <MeetTheTeam/>
+    
 </div>
 </template>
 <script>
-import CourseDetails from '../components/CourseDetails/detailsHeader.vue'
-import CourseOverview from '../components/CourseDetails/CourseOverview.vue'
+
+
+
+import CourseHero from '../components/CourseDetails/CourseHeroSection.vue'
+ import CourseOverview from '../components/CourseDetails/CourseOverview.vue'
 import MeetTheTeam from '../components/About/MeetTheTeam.vue'
 import CourseCurriculum from '../components/CourseDetails/CourseCurriculum.vue'
 export default {
     components: {
-        CourseDetails,
-        CourseOverview,
+        CourseHero,
+         CourseOverview,
         MeetTheTeam,
         CourseCurriculum
-    }
-}
+    },
+
+};
 </script>
+
 <style scoped>
 .coursedetails{
     /* display: flex;
     justify-content: center;
-    align-items: center; */
-    /* height: 100vh; */
+    align-items: center;
+    height: 100vh; */
 }
 
 </style>

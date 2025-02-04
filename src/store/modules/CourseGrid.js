@@ -14,6 +14,9 @@ const state = {
 };
 
 const getters = {
+  courses (state) {
+    return state.courses;
+  },
   filteredCourses(state) {
     let filtered = state.courses;
 
@@ -43,6 +46,7 @@ const getters = {
     const categories = state.courses.map((course) => course.category);
     return ["All", ...new Set(categories)];
   }
+
 };
 
 const mutations = {
