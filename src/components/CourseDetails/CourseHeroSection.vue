@@ -4,7 +4,7 @@
       <nav class="breadcrumb">
         <span><a href="/">Home</a> > <a href="/courses">Courses</a> > {{ courseTitle }}</span>
       </nav>
-      <h1 class="course-title">{{ courseTitle }}</h1>
+      <h1 class="course-title">{{ courseTitle}}</h1>
       <p class="course-tagline">{{ courseTagline }}</p>
       <button class="enroll-button" @click="enroll">Start Learning Today</button>
     </div>
@@ -30,7 +30,7 @@ export default {
     heroImage: {
       type: String,
       required: true,
-      default: "https://via.placeholder.com/600x400" // Replace with actual course image URL
+      default: "https://picsum.photos/536/354" // Replace with actual course image URL
     },
   },
   methods: {
@@ -44,6 +44,7 @@ export default {
 
 <style scoped>
 .hero-section {
+  margin-top: 64px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

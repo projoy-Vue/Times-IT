@@ -1,4 +1,4 @@
-// store/modules/courses.js
+// store/modules/PopularCourses.js
 import coursesData from "@/assets/courses.json";
 
 export default {
@@ -20,7 +20,7 @@ export default {
   },
   getters: {
     popularCourses: (state) => {
-      return state.allCourses.filter(course => course.popular);
+      return state.allCourses.filter(course => course.isPopular);
     },
   },
 };

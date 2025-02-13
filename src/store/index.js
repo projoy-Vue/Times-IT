@@ -6,7 +6,7 @@ import testimonials from "./modules/testimonials";
 import resources from "./modules/resources";
 //import * as  relatedCourses from "./modules/relatedcourses"; // Use named imports
 import CourseStatistics from "./modules/statistics";
-import CourseHeroSection from "./modules/CourseHeroSection";
+import course from "./modules/course";
 
 export default createStore({
  namespaced: true,
@@ -18,7 +18,8 @@ export default createStore({
     resources,
     //relatedCourses,
     CourseStatistics,
-    CourseHeroSection,
+    course,
+    
   },
 });
   

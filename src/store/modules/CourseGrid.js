@@ -1,5 +1,6 @@
 import coursesData from "@/assets/courses.json";
 
+
 const state = {
   courses: coursesData, // JSON courses data
   filters: {

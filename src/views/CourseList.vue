@@ -20,7 +20,7 @@ import CourseHeader from '../components/Course/CourseHeader.vue';
 import SubscriptionPlans from '../components/Course/SubscriptionPlans.vue';
 import ResourcesDownload from '../components/Course/ResourcesDownload.vue';
 import JoinOurCommunity from '../components/Course/JoinOurCommunity.vue';
-// import RelatedCourses from '../components/Course/RelatedCourses.vue';
+//  import RelatedCourses from '../components/Course/RelatedCourses.vue';
  import CourseStatistics from '../components/Course/CourseStatistics.vue';
  import CallToAction from '../components/Course/CallToAction.vue';
 
@@ -31,9 +31,9 @@ export default {
          SubscriptionPlans,
          ResourcesDownload,
          JoinOurCommunity,
-        //  RelatedCourses
-          CourseStatistics,
-          CallToAction
+        // RelatedCourses,
+        CourseStatistics,
+        CallToAction
     },
 }
 

@@ -28,7 +28,7 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("/images/courses-header-bg.jpg") no-repeat center center/cover;
+      url("https://picsum.photos/536/354") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

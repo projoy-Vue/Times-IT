@@ -39,10 +39,10 @@ const router = createRouter({
       component: CourseList 
     },
     {
-      path: '/course/:id',
-      name: 'CourseDetails',
-      component: CourseDetails,
-      props: true
+        path: '/courses/:id',
+        name: 'CourseDetails',
+        component: CourseDetails,
+        props: true
     }
   ],
 })

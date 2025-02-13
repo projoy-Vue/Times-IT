@@ -42,8 +42,8 @@
             <span><strong>Duration:</strong> {{ course.duration }}</span>
             <span><strong>Fee:</strong> ${{ course.fee }}</span>
           </p>
-          <router-link :to="{ name: 'CourseDetails', params: { id: course.id }}">{{ course.title }}</router-link>
-          <!-- <button class="btn-view-details" @click="viewCourseDetails(course.id)">View Details</button> -->
+          <!-- <router-link :to="{ name: 'CourseDetails', params: { id: course.id }}">{{ course.title }}</router-link> -->
+          <button class="btn-view-details" @click="viewCourseDetails(course.id)">View Details</button>
         </div>
       </div>
     </transition-group>
@@ -94,7 +94,7 @@ export default {
       this.updatePage(this.currentPage + 1);
     },
     viewCourseDetails(id) {
-      this.$router.push(`/course/${id}`);
+      this.$router.push(`/courses/${id}`);
     }
   }
 };
