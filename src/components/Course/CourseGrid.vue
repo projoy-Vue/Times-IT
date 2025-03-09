@@ -32,7 +32,7 @@
 
     <!-- Courses Grid -->
     <transition-group name="fade" tag="div" class="courses">
-    
+
       <div v-for="course in paginatedCourses" :key="course.id" class="course-card">
         <lazy-image v-lazy="`/images/${course.image}`" :alt="course.title" class="course-image" />
         <div class="course-content">
@@ -42,8 +42,9 @@
             <span><strong>Duration:</strong> {{ course.duration }}</span>
             <span><strong>Fee:</strong> ${{ course.fee }}</span>
           </p>
-          <!-- <router-link :to="{ name: 'CourseDetails', params: { id: course.id }}">{{ course.title }}</router-link> -->
-          <button class="btn-view-details" @click="viewCourseDetails(course.id)">View Details</button>
+          <router-link :to="{ name: 'CourseDetails', params: { id: course.id } }" class="btn-view-details">
+            View Details
+          </router-link>
         </div>
       </div>
     </transition-group>
@@ -60,44 +61,44 @@
 
 <script>
 
-import { mapGetters, mapActions } from "vuex";
+  import { mapGetters, mapActions } from "vuex";
 
-export default {
-  data() {
-    return {
-      selectedCategory: "All",
-      selectedSort: "title",
-      sortOrder: "asc"
-    };
-  },
-  computed: {
-    ...mapGetters("courses", ["categories", "paginatedCourses", "totalPages"]),
-    currentPage() {
-      return this.$store.state.courses.filters.currentPage;
+  export default {
+    data() {
+      return {
+        selectedCategory: "All",
+        selectedSort: "title",
+        sortOrder: "asc"
+      };
+    },
+    computed: {
+      ...mapGetters("courses", ["categories", "paginatedCourses", "totalPages"]),
+      currentPage() {
+        return this.$store.state.courses.filters.currentPage;
+      }
+    },
+    methods: {
+      ...mapActions("courses", ["updateCategory", "updateSort", "updatePage"]),
+      filterByCategory() {
+        this.updateCategory(this.selectedCategory);
+      },
+      sortCourses() {
+        this.updateSort({
+          sort: this.selectedSort,
+          sortOrder: this.sortOrder
+        });
+      },
+      prevPage() {
+        this.updatePage(this.currentPage - 1);
+      },
+      nextPage() {
+        this.updatePage(this.currentPage + 1);
+      },
+      viewCourseDetails(id) {
+        this.$router.push(`/courses/${id}`);
+      }
     }
-  },
-  methods: {
-    ...mapActions("courses", ["updateCategory", "updateSort", "updatePage"]),
-    filterByCategory() {
-      this.updateCategory(this.selectedCategory);
-    },
-    sortCourses() {
-      this.updateSort({
-        sort: this.selectedSort,
-        sortOrder: this.sortOrder
-      });
-    },
-    prevPage() {
-      this.updatePage(this.currentPage - 1);
-    },
-    nextPage() {
-      this.updatePage(this.currentPage + 1);
-    },
-    viewCourseDetails(id) {
-      this.$router.push(`/courses/${id}`);
-    }
-  }
-};
+  };
 </script>
 
 <style scoped>

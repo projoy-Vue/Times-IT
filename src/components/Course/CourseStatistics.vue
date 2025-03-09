@@ -75,7 +75,7 @@
     text-align: center;
     background-color: #f5f5f5;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
     margin-top: 30px;
   }
   
@@ -93,8 +93,8 @@
   }
   
   .stat-card {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
+    background: #fff;
+    color: rgb(27, 24, 24);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

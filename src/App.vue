@@ -1,9 +1,11 @@
 <template>
   <Header />
   <div class="container">
-    <transition name="fade" mode="out-in">
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
   <Footer />
 </template>
@@ -17,9 +19,7 @@ export default {
     Header,
     Footer,
   },
-
   mounted() {
-    // Custom smooth scroll using requestAnimationFrame
     window.addEventListener("wheel", this.handleSmoothScroll);
   },
   destroyed() {
@@ -27,14 +27,13 @@ export default {
   },
   methods: {
     handleSmoothScroll(event) {
-      // Use requestAnimationFrame for smoother scroll
       const scrollTarget = window.scrollY + event.deltaY;
       this.smoothScrollTo(scrollTarget);
     },
     smoothScrollTo(targetPosition) {
       const startPosition = window.scrollY;
       const distance = targetPosition - startPosition;
-      const duration = 600; // duration in ms
+      const duration = 600;
       const startTime = performance.now();
 
       const animateScroll = (currentTime) => {
@@ -51,18 +50,18 @@ export default {
     },
   },
 };
-
 </script>
-<style scoped>
 
-/* Transition effect when switching between routes */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+<style scoped>
+/* Corrected transition properties */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease-in-out;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
   transform: translateX(100%);
 }
-
 </style>

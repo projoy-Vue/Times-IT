@@ -1,89 +1,146 @@
 <template>
-    <section class="course-overview">
-      <h2 class="section-title">About the Course</h2>
-      <p class="course-description">
-        {{ description }}
-      </p>
-      <ul class="course-highlights">
-        <li v-for="(highlight, index) in highlights" :key="index">
-          <span class="highlight-icon">✔️</span>
-          {{ highlight }}
-        </li>
-      </ul>
-    </section>
-  </template>
-  
-  <script>
-  export default {
-    props: {
-      description: {
-        type: String,
-        required: true,
-        default: "This course is designed to provide a comprehensive understanding of Vue.js and help you build professional web applications with ease."
-      },
-      highlights: {
-        type: Array,
-        required: true,
-        default: () => [
-          "Master Vue.js concepts from beginner to advanced levels",
-          "Build real-world web applications step-by-step",
-          "Gain lifetime access to course materials and updates",
-          "Earn a professional certification upon completion",
-        ]
-      }
+  <section class="course-overview">
+    <h2>Course Overview</h2>
+    <div class="overview-grid">
+      <div class="description">
+        <h3>About This Course</h3>
+        <p>{{ course.description }}</p>
+      </div>
+      
+      <div class="key-features">
+        <h3>What's Included</h3>
+        <ul>
+          <li v-for="(feature, index) in course.overview.keyFeatures" :key="index">
+            <i class="fas fa-check-circle"></i> {{ feature }}
+          </li>
+        </ul>
+      </div>
+
+      <div class="objectives">
+        <h3>Learning Objectives</h3>
+        <ol>
+          <li v-for="(objective, index) in course.overview.objectives" :key="index">
+            {{ objective }}
+          </li>
+        </ol>
+      </div>
+
+      <div class="prerequisites">
+        <h3>Requirements</h3>
+        <ul>
+          <li v-for="(requirement, index) in course.overview.prerequisites" :key="index">
+            <i class="fas fa-book"></i> {{ requirement }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</template>
+<script>
+import { mapGetters } from 'vuex';
+
+export default {
+  computed: {
+    ...mapGetters('courses', ['getCourseById']),
+    course() {
+      return this.getCourseById(Number(this.$route.params.id)) || {};
     }
-  };
-  </script>
-  
-  <style scoped>
+  }
+};
+</script>
+
+<style scoped>
+.course-overview {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2d3436;
+}
+
+.description {
+  line-height: 1.6;
+  color: #636e72;
+  font-size: 1.1rem;
+}
+.description p {
+  line-height: 1.6;
+  color: #636e72;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+.key-features li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2d3436;
+}
+
+.key-features i {
+  color: #00b894;
+}
+
+.prerequisites li {
+  margin-bottom: 0.8rem;
+  color: #636e72;
+}
+
+.prerequisites i {
+  color: #6c5ce7;
+  margin-right: 0.5rem;
+}
+
+.objectives li {
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.objectives li::before {
+  content: "✓";
+  position: absolute;
+  left: -1rem;
+  color: #00b894;
+}
+
+@media (max-width: 768px) {
   .course-overview {
-    padding: 2rem;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    margin: 2rem 0;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #333;
-    text-align: center;
-  }
-  
-  .course-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-    color: #555;
-  }
-  
-  .course-highlights {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .course-highlights li {
-    font-size: 1rem;
-    color: #444;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #ffffff;
     padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(45% - 1rem);
   }
-  
-  .highlight-icon {
-    color: #4caf50;
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .description{
+  }
+  .description p {
+    font-size: 1rem;
+  }
+  h3 {
     font-size: 1.2rem;
   }
-  </style>
-  
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+</style>

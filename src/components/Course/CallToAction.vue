@@ -23,12 +23,12 @@
   
   <style scoped>
   .call-to-action {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
+    background: #f8f8f8;
+    color: rgb(17, 14, 14);
     text-align: center;
     padding: 50px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
     margin: 40px 0;
   }
   

@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-const CourseList = () => import('../views/CourseList.vue')
+import CourseList from '../views/CourseList.vue';
 import CourseDetails from '../views/CourseDetails.vue';
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,21 +31,9 @@ const router = createRouter({
 
       component: () => import('../views/ContactView.vue'),
     },
-    {
-      path: '/courses',
-      name: 'CourseList',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+    { path: '/courses', component: CourseList },
 
-      component: CourseList 
-    },
-    {
-        path: '/courses/:id',
-        name: 'CourseDetails',
-        component: CourseDetails,
-        props: true
-    }
+    { path: '/courses/:id', component: CourseDetails, name: 'CourseDetails' }
   ],
 })
 

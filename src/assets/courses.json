@@ -2,108 +2,238 @@
   {
     "id": 1,
     "title": "Full-Stack Web Development",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "https://picsum.photos/536/354",
+    "slug": "full-stack-web-development",
+    "tagline": "Build Modern Web Applications from Scratch",
+    "heroImage": "/images/courses/web-development-hero.jpg",
+    "thumbnail": "/images/courses/web-dev-thumb.jpg",
     "category": "Programming",
+    "level": "Intermediate",
     "isPopular": true,
-    "description": "Master front-end and back-end development with hands-on projects.",
+    "description": "Master both front-end and back-end development with modern technologies like JavaScript, Node.js, React, and MongoDB. Build real-world projects including e-commerce platforms and social networks.",
     "duration": "6 months",
-    "fee": 800,
-    "image": "web-development.jpg",
-    "popular": true,
-     "link": "/courses/1"
+    "hoursPerWeek": 8,
+    "price": 800,
+    "discountPrice": 699,
+    "enrollmentStatus": "Open",
+    "startDate": "2024-03-15",
+    "instructor": {
+      "name": "Sarah Johnson",
+      "bio": "Lead Full-Stack Developer at TechCorp",
+      "avatar": "/images/instructors/sarah-johnson.jpg"
+    },
+    "overview": {
+      "keyFeatures": [
+        "10+ real-world projects",
+        "1-on-1 code reviews",
+        "Career preparation guide"
+      ],
+      "prerequisites": ["Basic HTML/CSS", "JavaScript fundamentals"],
+      "objectives": [
+        "Build complete web applications",
+        "Implement REST APIs",
+        "Deploy applications to cloud"
+      ]
+    },
+    "curriculum": [
+      {
+        "module": 1,
+        "title": "Frontend Fundamentals",
+        "lessons": [
+          {
+            "title": "Modern HTML5 & CSS3",
+            "duration": "2h 15m",
+            "type": "video",
+            "resources": ["cheatsheet.pdf"]
+          }
+        ],
+        "duration": "3 weeks"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "John Doe",
+        "rating": 4.8,
+        "comment": "Excellent course with practical examples"
+      }
+    ],
+    "link": "/courses/1"
   },
   {
     "id": 2,
     "title": "Graphic Design Masterclass",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "graphic-design-hero.jpg",
+    "slug": "graphic-design-masterclass",
+    "tagline": "From Concept to Professional Designs",
+    "heroImage": "/images/courses/graphic-design-hero.jpg",
+    "thumbnail": "/images/courses/graphic-design-thumb.jpg",
     "category": "Design",
+    "level": "Beginner",
     "isPopular": true,
-    "description": "Learn Photoshop, Illustrator, and Figma to create stunning visuals.",
+    "description": "Master Adobe Creative Suite with hands-on projects in branding, illustration, and digital media. Learn from industry professionals with real client projects.",
     "duration": "3 months",
-    "fee": 600,
-    "image": "graphic-design.jpg",
-    "popular": true,
-     "link": "/courses/2"
-  
-  },
-  {
-    "id": 3,
-    "title": "Cybersecurity Essentials",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "cybersecurity-hero.jpg",
-    "category": "Cybersecurity",
-    "isPopular": true,
-    "description": "Gain in-demand skills to protect systems and networks.",
-    "duration": "4 months",
-    "fee": 700,
-    "image": "cybersecurity.jpg",
-    "link": "/courses/3"
-    
-  },
-  {
-    "id": 4,
-    "title": "Data Science Bootcamp",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "data-science-hero.jpg",
-    "category": "Data Science",
-    "description": "Learn Python, Machine Learning, and AI in this intensive bootcamp.",
-    "duration": "5 months",
-    "fee": 900,
-    "image": "data-science.jpg",
-    "link": "/courses/4"
-  },
-  {
-    "id": 5,
-    "title": "UI/UX Design Principles",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "ui-ux-design-hero.jpg",
-    "category": "Design",
-    "description": "Design intuitive and engaging digital experiences.",
-    "duration": "3 months",
-    "fee": 500,
-    "image": "ui-ux-design.jpg",
-    "link": "/courses/5"
-   
-  },
-  {
-    "id": 6,
-    "title": "Mobile App Development",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "mobile-app-development-hero.jpg",
-    "category": "Programming",
-    "description": "Build cross-platform apps for iOS and Android.",
-    "duration": "6 months",
-    "fee": 800,
-    "image": "mobile-app-development.jpg",
-    "link": "/courses/6"
-   
-  },
-  {
-    "id": 7,
-    "title": "Cloud Computing",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "cloud-computing-hero.jpg",
-    "category": "Cloud Computing",
-    "description": "Learn to deploy and manage applications on cloud platforms.",
-    "duration": "4 months",
-    "fee": 700,
-    "image": "cloud-computing.jpg",
-    "popular": true,
-    "link": "/courses/7"
-  
+    "hoursPerWeek": 6,
+    "price": 600,
+    "discountPrice": 499,
+    "enrollmentStatus": "Open",
+    "startDate": "2024-04-01",
+    "instructor": {
+      "name": "Michael Chen",
+      "bio": "Award-Winning Creative Director",
+      "avatar": "/images/instructors/michael-chen.jpg"
+    },
+    "overview": {
+      "keyFeatures": [
+        "Adobe Certified curriculum",
+        "Portfolio building workshops",
+        "Client project simulations"
+      ],
+      "prerequisites": ["Basic computer skills"],
+      "objectives": [
+        "Create professional brand identities",
+        "Master vector illustration",
+        "Design print & digital media"
+      ]
+    },
+    "curriculum": [
+      {
+        "module": 1,
+        "title": "Design Foundations",
+        "lessons": [
+          {
+            "title": "Color Theory Basics",
+            "duration": "1h 45m",
+            "type": "video",
+            "resources": ["color-palettes.zip"]
+          }
+        ],
+        "duration": "2 weeks"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Emma Wilson",
+        "rating": 4.9,
+        "comment": "Transformative learning experience"
+      }
+    ],
+    "link": "/courses/2"
   },
   {
     "id": 8,
     "title": "Digital Marketing Fundamentals",
-    "tagline": "From Beginner to Advanced with Real Projects",
-    "heroImage": "digital-marketing-hero.jpg",
+    "slug": "digital-marketing-fundamentals",
+    "tagline": "Master Online Marketing Strategies",
+    "heroImage": "/images/courses/digital-marketing-hero.jpg",
+    "thumbnail": "/images/courses/digital-marketing-thumb.jpg",
     "category": "Marketing",
-    "description": "Master SEO, SEM, and social media marketing.",
+    "level": "Beginner",
+    "isPopular": true,
+    "description": "Comprehensive guide to digital marketing covering SEO, SEM, social media, and analytics. Learn to create effective marketing campaigns.",
     "duration": "3 months",
-    "fee": 600,
-    "image": "digital-marketing.jpg",
+    "hoursPerWeek": 5,
+    "price": 600,
+    "discountPrice": 549,
+    "enrollmentStatus": "Open",
+    "startDate": "2024-05-01",
+    "instructor": {
+      "name": "Lisa Rodriguez",
+      "bio": "Digital Marketing Strategist",
+      "avatar": "/images/instructors/lisa-rodriguez.jpg"
+    },
+    "overview": {
+      "keyFeatures": [
+        "Google Analytics certification",
+        "Real campaign case studies",
+        "Social media strategy templates"
+      ],
+      "prerequisites": ["Basic computer skills"],
+      "objectives": [
+        "Develop SEO strategies",
+        "Run effective ad campaigns",
+        "Analyze marketing metrics"
+      ]
+    },
+    "curriculum": [
+      {
+        "module": 1,
+        "title": "Digital Marketing Basics",
+        "lessons": [
+          {
+            "title": "SEO Fundamentals",
+            "duration": "2h 30m",
+            "type": "video",
+            "resources": ["seo-checklist.pdf"]
+          }
+        ],
+        "duration": "2 weeks"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "David Smith",
+        "rating": 4.7,
+        "comment": "Practical and up-to-date content"
+      }
+    ],
     "link": "/courses/8"
+  },
+  {
+    "id": 9,
+    "title": "Python for Data Science",
+    "slug": "python-for-data-science",
+    "tagline": "Master Data Science with Python",
+    "heroImage": "/images/courses/python-data-science-hero.jpg",
+    "thumbnail": "/images/courses/python-data-science-thumb.jpg",
+    "category": "Data Science",
+    "level": "Intermediate",
+    "description": "Learn Python programming and data science libraries such as NumPy, Pandas, and Matplotlib. Work on real-world data analysis projects.",
+    "duration": "4 months",
+    "hoursPerWeek": 6,
+    "price": 700,
+    "discountPrice": 599,
+    "enrollmentStatus": "Open",
+    "startDate": "2024-06-01",
+    "instructor": {
+      "name": "Daniel Green",
+      "bio": "Data Scientist at DataTech",
+      "avatar": "/images/instructors/daniel-green.jpg"
+    },
+    "overview": {
+      "keyFeatures": [
+        "Hands-on Python programming",
+        "Data cleaning and manipulation",
+        "Data visualization with Matplotlib"
+      ],
+      "prerequisites": ["Basic Python skills"],
+      "objectives": [
+        "Understand data structures",
+        "Work with NumPy and Pandas",
+        "Visualize data with Matplotlib"
+      ]
+    },
+    "curriculum": [
+      {
+        "module": 1,
+        "title": "Python Basics",
+        "lessons": [
+          {
+            "title": "Python Data Structures",
+            "duration": "2h 45m",
+            "type": "video",
+            "resources": ["data-structures.zip"]
+          }
+        ],
+        "duration": "3 weeks"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Michael Johnson",
+        "rating": 4.8,
+        "comment": "Great course for beginners"
+      }
+
+    ]
+    ,
+    "link": "/courses/9"
   }
 ]
