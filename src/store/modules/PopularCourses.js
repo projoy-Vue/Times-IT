@@ -13,9 +13,7 @@ export default {
   },
   actions: {
     fetchCourses({ commit }) {
-      // Simulate fetching data from JSON file
-      const courses = coursesData;
-      commit("SET_COURSES", courses);
+      commit("SET_COURSES", coursesData);
     },
   },
   getters: {

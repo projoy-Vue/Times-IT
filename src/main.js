@@ -1,4 +1,4 @@
- import './assets/main.css'
+ import '@/assets/main.css'
 
  import VueLazyload from 'vue-lazyload';
 import { createApp } from 'vue'

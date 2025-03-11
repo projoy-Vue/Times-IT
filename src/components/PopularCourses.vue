@@ -16,7 +16,7 @@
           :key="course.id" 
           class="course-card"
         >
-          <img :src="course.image" :alt="course.title" class="course-image" />
+          <img :src="getImagePath(course.heroImage)" :alt="course.title" class="course-image" />
           <div class="course-content">
             <h3 class="course-title">{{ course.title }}</h3>
             <p class="course-description">{{ course.description }}</p>
@@ -39,6 +39,19 @@ export default {
   computed: {
     ...mapGetters('popularCourses', ['popularCourses']) // Update to use the new module name
   },
+  methods: {
+    getImagePath (imageName) {
+      try {
+        return new URL(`../assets/images/${imageName}`, import.meta.url).href;
+      } catch {
+        return this.fallbackImage;
+      }
+    },
+    handleImageError(event) {
+      event.target.src = this.fallbackImage;
+    }
+  },
+
   created() {
     // Dispatch the action to fetch courses when the component is created
     this.$store.dispatch('popularCourses/fetchCourses'); // Update to use the new module name

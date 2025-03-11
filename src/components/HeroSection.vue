@@ -16,14 +16,21 @@
   
       <!-- Hero Image -->
       <div class="hero-image">
-        <img src="https://picsum.photos/536/354" alt="Learning Illustration" />
+        <img :src="imgSrc" alt="Learning Illustration" />
       </div>
     </section>
   </template>
   
   <script>
+  import learningIllustration from "../assets/images/learning-illustration.jpg";
+
   export default {
     name: "HeroSection",
+    data() {
+      return {
+        imgSrc: learningIllustration,
+      };
+    },
     methods: {
         navgatTOcontact() {
             this.$router.push("/contact");

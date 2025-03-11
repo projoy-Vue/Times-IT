@@ -15,5 +15,6 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
- nbase: 'Times-IT/IT', // Replace 'repository-name' with the name of your GitHub repository
+  base: '/Times-IT/', // Corrected the 'base' option (instead of 'nbase')
 })
+
